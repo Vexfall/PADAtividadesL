@@ -2,11 +2,33 @@
 <head>
 <html lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width0=device-width, initial-scale=1.0">
+    <title>Melhores jogadores do mundo,0</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <form action="">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="data:image/jpeg;base64,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" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.fcbarcelona.com/photo-resources/2020/03/07/3dec9958-517d-491f-b355-5e69193db7cb/mini_2020-03-07-BARCELONA-R.-SOCIEDAD-74.JPG?width=1200&height=750" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.daznservices.com/di/library/GOAL/80/9c/cristiano-ronaldo-juventus-2019-20_rb0vgy1nfj8o11veyj09m1hn4.jpg?t=2133540735&quality=100" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    <!-- <form action="">
         TEXTO: <input type="text">
         <br>
         PASSWORD: <input type="password">
@@ -34,6 +56,9 @@
         BOTÃO LIMPAR: <input type="button" value="Limpar">
         <br>
         ENVIAR: <input type="submit">
-    </form>
+    </form> -->
 </body>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
 </html>
